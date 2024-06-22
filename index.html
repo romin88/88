@@ -8,16 +8,19 @@
         body {
             font-family: Arial, sans-serif;
             display: flex;
-            justify-content: center;
+            flex-direction: column;
             align-items: center;
             height: 100vh;
             background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
         }
         .calculator {
             background-color: #fff;
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
         }
         .calculator input {
             width: 100%;
@@ -47,9 +50,14 @@
         .calculator .equal:hover {
             background-color: #218838;
         }
+        .download-link {
+            margin-top: 20px;
+            font-size: 1.2em;
+        }
     </style>
 </head>
 <body>
+    <h1>Calculator</h1>
     <div class="calculator">
         <input type="text" id="display" disabled>
         <br>
@@ -72,6 +80,10 @@
         <button onclick="appendToDisplay('+')">+</button>
     </div>
 
+    <div class="download-link">
+        <a href="path/to/your/file.txt" download="your_file.txt">Download File</a>
+    </div>
+
     <script>
         function appendToDisplay(value) {
             document.getElementById('display').value += value;
@@ -90,9 +102,5 @@
             }
         }
     </script>
-    <body>
-    <h1>Download File Example</h1>
-    <a href="path/to/your/file.txt" download="your_file.txt">Download File</a>
-</body>
 </body>
 </html>
