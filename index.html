@@ -3,32 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>QR Site</title>
+    <title>Youth Gathering 2024</title>
     <style>
         body {
             background-color: black;
             color: white;
-            text-align: center;
             font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            flex-direction: column;
         }
         h1 {
-            font-weight: bold;
+            font-size: 3em;
+            color: goldenrod;
         }
-        p {
-            font-size: smaller;
+        img {
+            margin: 20px 0;
+            max-width: 50%;
+            height: auto;
         }
-        a {
-            color: #00bfff;
+        .description {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+        .links {
+            display: flex;
+            gap: 20px;
+        }
+        .links a {
+            color: goldenrod;
             text-decoration: none;
+            font-size: 2em;
+            border: 2px solid goldenrod;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .links a:hover {
+            background-color: goldenrod;
+            color: black;
         }
     </style>
 </head>
 <body>
-    <h1>Youth Gathering Page 2024</h1>
-    <p>This is where the details will go, including how many pages</p>
-    <p>Obviously it will look a bit nicer and more attractive than this boring page.</p>
-    <p>The link will be <a href="https://romin88.github.io/youthgathering/" target="_blank">https://romin88.github.io/youthgathering/</a> and the following QR Code will be this.</p>
-    <img src="qrcode.png" alt="QR Code">
-    <p>Now it's just left to design the simple page, a PDF file, and the cards.</p>
+    <h1>Youth Gathering 2024</h1>
+    <h1>تجمع الشباب 2024</h1>
+    <img src="entrance.png" alt="Entrance Image">
+    <div class="description">
+        Welcome to Youth Gathering 2024 page, to know more about the details please select the language you would like to read in.
+        <br>
+        مرحبًا بكم في صفحة تجمع الشباب 2024، لمعرفة المزيد من التفاصيل، يرجى اختيار اللغة التي ترغب في القراءة بها.
+    </div>
+    <div class="links">
+        <a href="arabic.html">العربية</a>
+        <a href="english.html">English</a>
+    </div>
 </body>
 </html>
